@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "net.theelementguy.tegmoremetals.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"MoreMetalsMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
