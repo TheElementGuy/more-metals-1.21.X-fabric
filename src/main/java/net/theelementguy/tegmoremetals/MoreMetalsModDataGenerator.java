@@ -24,6 +24,8 @@ public class MoreMetalsModDataGenerator implements DataGeneratorEntrypoint {
         packPackYumYum.addProvider(ModRecipeProvider::new);
         packPackYumYum.addProvider(ModRegistryDataGenerator::new);
         packPackYumYum.addProvider((FabricDataGenerator.Pack.Factory<ModEquipmentAssetProvider>) ModEquipmentAssetProvider::new);
+        packPackYumYum.addProvider(ModLanguageProviderLol::new);
+        packPackYumYum.addProvider(ModLanguageProviderPirate::new);
 
     }
 

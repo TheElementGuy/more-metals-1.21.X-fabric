@@ -1,5 +1,6 @@
 package net.theelementguy.tegmoremetals.util;
 
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
@@ -10,6 +11,8 @@ import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.item.equipment.EquipmentAsset;
 import net.minecraft.world.level.block.Block;
 import net.theelementguy.tegmoremetals.MoreMetalsMod;
+
+import java.util.ArrayList;
 
 public class ModUtil {
 
@@ -52,5 +55,15 @@ public class ModUtil {
     public static void inventoryAddAfter(DeferredBlock<? extends Block> item, DeferredBlock<? extends Block> referenceItem, BuildCreativeModeTabContentsEvent event) {
         event.insertAfter(new ItemStack(referenceItem, 1), new ItemStack(item, 1), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
     }*/
+
+    public static Item getItemFromKey(String key) {
+
+        return BuiltInRegistries.ITEM.get(ModUtil.createItemResourceKey(key)).get().value();
+    }
+
+    public static Block getBlockFromKey(String key) {
+        return BuiltInRegistries.BLOCK.get(ModUtil.createBlockResourceKey(key)).get().value();
+    }
+
 
 }
