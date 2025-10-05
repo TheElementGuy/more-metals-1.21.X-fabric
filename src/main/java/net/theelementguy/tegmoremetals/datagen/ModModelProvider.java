@@ -47,8 +47,6 @@ public class ModModelProvider extends FabricModelProvider {
             new ItemModelGenerators.TrimMaterialData(MaterialAssetGroup.AMETHYST, TrimMaterials.AMETHYST),
             new ItemModelGenerators.TrimMaterialData(MaterialAssetGroup.RESIN, TrimMaterials.RESIN),
             new ItemModelGenerators.TrimMaterialData(ModTrimMaterials.CUBIC_ZIRCONIA_ASSET_GROUP, ModTrimMaterials.CUBIC_ZIRCONIA),
-            new ItemModelGenerators.TrimMaterialData(ModTrimMaterials.BRONZE_ASSET_GROUP, ModTrimMaterials.BRONZE),
-            new ItemModelGenerators.TrimMaterialData(ModTrimMaterials.TIN_ASSET_GROUP, ModTrimMaterials.TIN),
             new ItemModelGenerators.TrimMaterialData(ModTrimMaterials.STARSHARD_ASSET_GROUP, ModTrimMaterials.STARSHARD),
             new ItemModelGenerators.TrimMaterialData(ModTrimMaterials.RUBIDIUM_ASSET_GROUP, ModTrimMaterials.RUBIDIUM),
             new ItemModelGenerators.TrimMaterialData(ModTrimMaterials.BLOODSTONE_ASSET_GROUP, ModTrimMaterials.BLOODSTONE)
@@ -60,14 +58,10 @@ public class ModModelProvider extends FabricModelProvider {
         blockModels.createTrivialCube(ModBlocks.RAW_CUBIC_ZIRCONIA_BLOCK);
         blockModels.createTrivialCube(ModBlocks.CUBIC_ZIRCONIA_ORE);
         blockModels.createTrivialCube(ModBlocks.DEEPSLATE_CUBIC_ZIRCONIA_ORE);
-        blockModels.createTrivialCube(ModBlocks.TIN_BLOCK);
-        blockModels.createTrivialCube(ModBlocks.TIN_ORE);
-        blockModels.createTrivialCube(ModBlocks.DEEPSLATE_TIN_ORE);
         blockModels.createTrivialCube(ModBlocks.RUBIDIUM_BLOCK);
         blockModels.createTrivialCube(ModBlocks.NETHER_RUBIDIUM_ORE);
         blockModels.createColoredBlockWithStateRotations(TexturedModel.GLAZED_TERRACOTTA, ModBlocks.STARSHARD_BLOCK);
         blockModels.createTrivialCube(ModBlocks.END_STARSHARD_ORE);
-        blockModels.createTrivialCube(ModBlocks.BRONZE_BLOCK);
         blockModels.createTrivialCube(ModBlocks.BLOODSTONE_BLOCK);
         blockModels.createTrivialCube(ModBlocks.BLOODSTONE_ORE);
         blockModels.createTrivialCube(ModBlocks.DEEPSLATE_BLOODSTONE_ORE);
@@ -79,10 +73,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModels.generateFlatItem(ModItems.RAW_CUBIC_ZIRCONIA, ModelTemplates.FLAT_ITEM);
         //itemModels.generateFlatItem(ModItems.CELESTIAL_BRONZE_INGOT, ModelTemplates.FLAT_ITEM);
         //itemModels.generateFlatItem(ModItems.RAW_CELESTIAL_BRONZE, ModelTemplates.FLAT_ITEM);
-        itemModels.generateFlatItem(ModItems.TIN_SCRAPS, ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.RUBIDIUM, ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.STARSHARD, ModelTemplates.FLAT_ITEM);
-        itemModels.generateFlatItem(ModItems.BRONZE_INGOT, ModelTemplates.FLAT_ITEM);
         normal(ModItems.BLOODSTONE, itemModels);
 
         itemModels.generateFlatItem(ModItems.CUBIC_ZIRCONIA_SWORD, ModelTemplates.FLAT_HANDHELD_ITEM);
@@ -100,11 +92,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModels.generateFlatItem(ModItems.STARSHARD_PICKAXE, ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ModItems.STARSHARD_SHOVEL, ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ModItems.STARSHARD_HOE, ModelTemplates.FLAT_HANDHELD_ITEM);
-        itemModels.generateFlatItem(ModItems.BRONZE_SWORD, ModelTemplates.FLAT_HANDHELD_ITEM);
-        itemModels.generateFlatItem(ModItems.BRONZE_AXE, ModelTemplates.FLAT_HANDHELD_ITEM);
-        itemModels.generateFlatItem(ModItems.BRONZE_PICKAXE, ModelTemplates.FLAT_HANDHELD_ITEM);
-        itemModels.generateFlatItem(ModItems.BRONZE_SHOVEL, ModelTemplates.FLAT_HANDHELD_ITEM);
-        itemModels.generateFlatItem(ModItems.BRONZE_HOE, ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ModItems.BLOODSTONE_SWORD, ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ModItems.BLOODSTONE_AXE, ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ModItems.BLOODSTONE_PICKAXE, ModelTemplates.FLAT_HANDHELD_ITEM);
@@ -122,11 +109,7 @@ public class ModModelProvider extends FabricModelProvider {
         generateTrimmableItemWithModdedMaterials(itemModels, ModItems.STARSHARD_HELMET, ModEquipmentAssets.STARSHARD, false);
         generateTrimmableItemWithModdedMaterials(itemModels, ModItems.STARSHARD_CHESTPLATE, ModEquipmentAssets.STARSHARD, false);
         generateTrimmableItemWithModdedMaterials(itemModels, ModItems.STARSHARD_LEGGINGS, ModEquipmentAssets.STARSHARD, false);
-        generateTrimmableItemWithModdedMaterials(itemModels, ModItems.STARSHARD_BOOTS, ModEquipmentAssets.STARSHARD, false);
-        generateTrimmableItemWithModdedMaterials(itemModels, ModItems.BRONZE_HELMET, ModEquipmentAssets.BRONZE, false);
-        generateTrimmableItemWithModdedMaterials(itemModels, ModItems.BRONZE_CHESTPLATE, ModEquipmentAssets.BRONZE, false);
-        generateTrimmableItemWithModdedMaterials(itemModels, ModItems.BRONZE_LEGGINGS, ModEquipmentAssets.BRONZE, false);
-        generateTrimmableItemWithModdedMaterials(itemModels, ModItems.BRONZE_BOOTS, ModEquipmentAssets.BRONZE, false);
+		generateTrimmableItemWithModdedMaterials(itemModels, ModItems.STARSHARD_BOOTS, ModEquipmentAssets.STARSHARD, false);
         generateTrimmableItemWithModdedMaterials(itemModels, ModItems.BLOODSTONE_HELMET, ModEquipmentAssets.BLOODSTONE, false);
         generateTrimmableItemWithModdedMaterials(itemModels, ModItems.BLOODSTONE_CHESTPLATE, ModEquipmentAssets.BLOODSTONE, false);
         generateTrimmableItemWithModdedMaterials(itemModels, ModItems.BLOODSTONE_LEGGINGS, ModEquipmentAssets.BLOODSTONE, false);

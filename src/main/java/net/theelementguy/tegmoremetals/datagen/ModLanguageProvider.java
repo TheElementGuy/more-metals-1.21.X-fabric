@@ -34,19 +34,6 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.CUBIC_ZIRCONIA_LEGGINGS, "Cubic Zirconia Leggings");
         translationBuilder.add(ModItems.CUBIC_ZIRCONIA_BOOTS, "Cubic Zirconia Boots");
 
-        translationBuilder.add(ModItems.TIN_SCRAPS, "Tin Scraps");
-
-        translationBuilder.add(ModItems.BRONZE_INGOT, "Bronze Ingot");
-        translationBuilder.add(ModItems.BRONZE_SWORD, "Bronze Sword");
-        translationBuilder.add(ModItems.BRONZE_AXE, "Bronze Axe");
-        translationBuilder.add(ModItems.BRONZE_PICKAXE, "Bronze Pickaxe");
-        translationBuilder.add(ModItems.BRONZE_SHOVEL, "Bronze Shovel");
-        translationBuilder.add(ModItems.BRONZE_HOE, "Bronze Hoe");
-        translationBuilder.add(ModItems.BRONZE_HELMET, "Bronze Helmet");
-        translationBuilder.add(ModItems.BRONZE_CHESTPLATE, "Bronze Chestplate");
-        translationBuilder.add(ModItems.BRONZE_LEGGINGS, "Bronze Leggings");
-        translationBuilder.add(ModItems.BRONZE_BOOTS, "Bronze Boots");
-
         translationBuilder.add(ModItems.RUBIDIUM, "Rubidium");
         translationBuilder.add(ModItems.RUBIDIUM_SWORD, "Rubidium Sword");
         translationBuilder.add(ModItems.RUBIDIUM_AXE, "Rubidium Axe");
@@ -74,24 +61,18 @@ public class ModLanguageProvider extends FabricLanguageProvider {
 
         translationBuilder.add(ModBlocks.CUBIC_ZIRCONIA_BLOCK, "Block of Cubic Zirconia");
         translationBuilder.add(ModBlocks.RAW_CUBIC_ZIRCONIA_BLOCK, "Block of Raw Cubic Zirconia");
-        translationBuilder.add(ModBlocks.TIN_BLOCK, "Block of Tin");
-        translationBuilder.add(ModBlocks.BRONZE_BLOCK, "Block of Bronze");
         translationBuilder.add(ModBlocks.RUBIDIUM_BLOCK, "Block of Rubidium");
         translationBuilder.add(ModBlocks.STARSHARD_BLOCK, "Block of Starshard");
         translationBuilder.add(ModBlocks.BLOODSTONE_BLOCK, "Block of Bloodstone");
 
         translationBuilder.add(ModBlocks.CUBIC_ZIRCONIA_BLOCK.asItem(), "Block of Cubic Zirconia");
         translationBuilder.add(ModBlocks.RAW_CUBIC_ZIRCONIA_BLOCK.asItem(), "Block of Raw Cubic Zirconia");
-        translationBuilder.add(ModBlocks.TIN_BLOCK.asItem(), "Block of Tin");
-        translationBuilder.add(ModBlocks.BRONZE_BLOCK.asItem(), "Block of Bronze");
         translationBuilder.add(ModBlocks.RUBIDIUM_BLOCK.asItem(), "Block of Rubidium");
         translationBuilder.add(ModBlocks.STARSHARD_BLOCK.asItem(), "Block of Starshard");
         translationBuilder.add(ModBlocks.BLOODSTONE_BLOCK.asItem(), "Block of Bloodstone");
 
         translationBuilder.add(ModBlocks.CUBIC_ZIRCONIA_ORE, "Cubic Zirconia Ore");
         translationBuilder.add(ModBlocks.DEEPSLATE_CUBIC_ZIRCONIA_ORE, "Deepslate Cubic Zirconia Ore");
-        translationBuilder.add(ModBlocks.TIN_ORE, "Tin Ore");
-        translationBuilder.add(ModBlocks.DEEPSLATE_TIN_ORE, "Deepslate Tin Ore");
         translationBuilder.add(ModBlocks.BLOODSTONE_ORE, "Bloodstone Ore");
         translationBuilder.add(ModBlocks.DEEPSLATE_BLOODSTONE_ORE, "Deepslate Bloodstone Ore");
         translationBuilder.add(ModBlocks.NETHER_RUBIDIUM_ORE, "Nether Rubidium Ore");
@@ -99,16 +80,12 @@ public class ModLanguageProvider extends FabricLanguageProvider {
 
         translationBuilder.add(ModBlocks.CUBIC_ZIRCONIA_ORE.asItem(), "Cubic Zirconia Ore");
         translationBuilder.add(ModBlocks.DEEPSLATE_CUBIC_ZIRCONIA_ORE.asItem(), "Deepslate Cubic Zirconia Ore");
-        translationBuilder.add(ModBlocks.TIN_ORE.asItem(), "Tin Ore");
-        translationBuilder.add(ModBlocks.DEEPSLATE_TIN_ORE.asItem(), "Deepslate Tin Ore");
         translationBuilder.add(ModBlocks.BLOODSTONE_ORE.asItem(), "Bloodstone Ore");
         translationBuilder.add(ModBlocks.DEEPSLATE_BLOODSTONE_ORE.asItem(), "Deepslate Bloodstone Ore");
         translationBuilder.add(ModBlocks.NETHER_RUBIDIUM_ORE.asItem(), "Nether Rubidium Ore");
         translationBuilder.add(ModBlocks.END_STARSHARD_ORE.asItem(), "End Starshard Ore");
 
         addTrimMaterial(ModTrimMaterials.CUBIC_ZIRCONIA, "Cubic Zirconia", translationBuilder);
-        addTrimMaterial(ModTrimMaterials.TIN, "Tin", translationBuilder);
-        addTrimMaterial(ModTrimMaterials.BRONZE, "Bronze", translationBuilder);
         addTrimMaterial(ModTrimMaterials.RUBIDIUM, "Rubidium", translationBuilder);
         addTrimMaterial(ModTrimMaterials.STARSHARD, "Starshard", translationBuilder);
         addTrimMaterial(ModTrimMaterials.BLOODSTONE, "Bloodstone", translationBuilder);

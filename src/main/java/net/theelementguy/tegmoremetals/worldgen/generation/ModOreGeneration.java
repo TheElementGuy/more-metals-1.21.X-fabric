@@ -14,12 +14,6 @@ public class ModOreGeneration {
 
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.UNDERGROUND_ORES,ModPlacedFeatures.CUBIC_ZIRCONIA_MEDIUM_ORE_PLACED_KEY);
 
-        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.UNDERGROUND_ORES,ModPlacedFeatures.TIN_SMALL_ORE_PLACED_KEY);
-
-        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.UNDERGROUND_ORES,ModPlacedFeatures.TIN_LARGE_ORE_PLACED_KEY);
-
-        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.UNDERGROUND_ORES,ModPlacedFeatures.TIN_LARGE_EXTRA_ORE_PLACED_KEY);
-
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.UNDERGROUND_ORES,ModPlacedFeatures.RUBIDIUM_LARGE_ORE_PLACED_KEY);
 
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.UNDERGROUND_ORES,ModPlacedFeatures.RUBIDIUM_SMALL_ORE_PLACED_KEY);

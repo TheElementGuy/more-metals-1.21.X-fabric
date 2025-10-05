@@ -40,17 +40,12 @@ public class ModBlockLootTableProvider extends FabricBlockLootTableProvider {
 
         dropSelf(ModBlocks.CUBIC_ZIRCONIA_BLOCK);
         dropSelf(ModBlocks.RAW_CUBIC_ZIRCONIA_BLOCK);
-        dropSelf(ModBlocks.TIN_BLOCK);
         dropSelf(ModBlocks.RUBIDIUM_BLOCK);
         dropSelf(ModBlocks.STARSHARD_BLOCK);
-        dropSelf(ModBlocks.BRONZE_BLOCK);
         dropSelf(ModBlocks.BLOODSTONE_BLOCK);
 
         add(ModBlocks.CUBIC_ZIRCONIA_ORE, block -> createOreDrop(ModBlocks.CUBIC_ZIRCONIA_ORE, ModItems.RAW_CUBIC_ZIRCONIA));
         add(ModBlocks.DEEPSLATE_CUBIC_ZIRCONIA_ORE, block -> createOreDrop(ModBlocks.DEEPSLATE_CUBIC_ZIRCONIA_ORE, ModItems.RAW_CUBIC_ZIRCONIA));
-
-        add(ModBlocks.TIN_ORE, block -> createMultipleOreDrops(ModBlocks.TIN_ORE, ModItems.TIN_SCRAPS, 2.0f, 5.0f));
-        add(ModBlocks.DEEPSLATE_TIN_ORE, block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_TIN_ORE, ModItems.TIN_SCRAPS, 2.0f, 5.0f));
 
         add(ModBlocks.NETHER_RUBIDIUM_ORE, block -> createOreDrop(ModBlocks.NETHER_RUBIDIUM_ORE, ModItems.RUBIDIUM));
 

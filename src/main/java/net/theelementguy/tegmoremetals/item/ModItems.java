@@ -42,8 +42,6 @@ public class ModItems {
 
     public static final Item CUBIC_ZIRCONIA_BOOTS = register("cubic_zirconia_boots", () -> new Item((new Item.Properties()).fireResistant().humanoidArmor(ModArmorMaterials.CUBIC_ZIRCONIA, ArmorType.BOOTS).setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MoreMetalsMod.MOD_ID, "cubic_zirconia_boots")))));
 
-    public static final Item TIN_SCRAPS = register("tin_scraps", () -> new Item((new Item.Properties().trimMaterial(ModTrimMaterials.TIN)).setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MoreMetalsMod.MOD_ID, "tin_scraps")))));
-
     public static final Item RUBIDIUM = register("rubidium", () -> new Item((new Item.Properties()).trimMaterial(ModTrimMaterials.RUBIDIUM).setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MoreMetalsMod.MOD_ID, "rubidium")))));
 
     public static final Item RUBIDIUM_SWORD = register("rubidium_sword", () -> new Item((new Item.Properties()).sword(ModToolMaterials.RUBIDIUM, 3.0F, -2.4F).setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MoreMetalsMod.MOD_ID, "rubidium_sword")))));
@@ -83,26 +81,6 @@ public class ModItems {
     public static final Item STARSHARD_LEGGINGS = register("starshard_leggings", () -> new Item((new Item.Properties()).humanoidArmor(ModArmorMaterials.STARSHARD, ArmorType.LEGGINGS).setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MoreMetalsMod.MOD_ID, "starshard_leggings")))));
 
     public static final Item STARSHARD_BOOTS = register("starshard_boots", () -> new Item((new Item.Properties()).humanoidArmor(ModArmorMaterials.STARSHARD, ArmorType.BOOTS).setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MoreMetalsMod.MOD_ID, "starshard_boots")))));
-
-    public static final Item BRONZE_INGOT = register("bronze_ingot", () -> new Item(new Item.Properties().trimMaterial(ModTrimMaterials.BRONZE).setId(ModUtil.createItemResourceKey("bronze_ingot"))));
-
-    public static final Item BRONZE_SWORD = register("bronze_sword", () -> new Item((new Item.Properties()).sword(ModToolMaterials.BRONZE, 3.0F, -2.4F).setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MoreMetalsMod.MOD_ID, "bronze_sword")))));
-
-    public static final Item BRONZE_AXE = register("bronze_axe", () -> new AxeItem(ModToolMaterials.BRONZE, 6.0F, -3.1F, (new Item.Properties()).setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MoreMetalsMod.MOD_ID, "bronze_axe")))));
-
-    public static final Item BRONZE_PICKAXE = register("bronze_pickaxe", () -> new Item((new Item.Properties()).pickaxe(ModToolMaterials.BRONZE, 1.0F, -2.8F).setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MoreMetalsMod.MOD_ID, "bronze_pickaxe")))));
-
-    public static final Item BRONZE_SHOVEL = register("bronze_shovel", () -> new ShovelItem(ModToolMaterials.BRONZE, 1.5F, -3.0F, (new Item.Properties()).setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MoreMetalsMod.MOD_ID, "bronze_shovel")))));
-
-    public static final Item BRONZE_HOE = register("bronze_hoe", () -> new HoeItem(ModToolMaterials.BRONZE, -2.0F, -1.0F, (new Item.Properties()).setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MoreMetalsMod.MOD_ID, "bronze_hoe")))));
-
-    public static final Item BRONZE_HELMET = register("bronze_helmet", () -> new Item((new Item.Properties()).humanoidArmor(ModArmorMaterials.BRONZE, ArmorType.HELMET).setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MoreMetalsMod.MOD_ID, "bronze_helmet")))));
-
-    public static final Item BRONZE_CHESTPLATE = register("bronze_chestplate", () -> new Item((new Item.Properties()).humanoidArmor(ModArmorMaterials.BRONZE, ArmorType.CHESTPLATE).setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MoreMetalsMod.MOD_ID, "bronze_chestplate")))));
-
-    public static final Item BRONZE_LEGGINGS = register("bronze_leggings", () -> new Item((new Item.Properties()).humanoidArmor(ModArmorMaterials.BRONZE, ArmorType.LEGGINGS).setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MoreMetalsMod.MOD_ID, "bronze_leggings")))));
-
-    public static final Item BRONZE_BOOTS = register("bronze_boots", () -> new Item((new Item.Properties()).humanoidArmor(ModArmorMaterials.BRONZE, ArmorType.BOOTS).setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MoreMetalsMod.MOD_ID, "bronze_boots")))));
 
     public static final Item BLOODSTONE = register("bloodstone", () -> new Item(new Item.Properties().trimMaterial(ModTrimMaterials.BLOODSTONE).setId(ModUtil.createItemResourceKey("bloodstone"))));
 
@@ -173,10 +151,8 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.INGREDIENTS).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.addAfter(Items.GOLD_INGOT, ModItems.CUBIC_ZIRCONIA);
             fabricItemGroupEntries.addAfter(Items.LAPIS_LAZULI, ModItems.RAW_CUBIC_ZIRCONIA);
-            fabricItemGroupEntries.addAfter(Items.RAW_COPPER, ModItems.TIN_SCRAPS);
             fabricItemGroupEntries.addAfter(Items.DIAMOND, ModItems.RUBIDIUM);
             fabricItemGroupEntries.addAfter(ModItems.RUBIDIUM, ModItems.STARSHARD);
-            fabricItemGroupEntries.addAfter(Items.COPPER_INGOT, ModItems.BRONZE_INGOT);
             fabricItemGroupEntries.addAfter(ModItems.CUBIC_ZIRCONIA, ModItems.BLOODSTONE);
             MoreMetalsMod.LOGGER.info("ingredients");
         });
@@ -185,18 +161,14 @@ public class ModItems {
             fabricItemGroupEntries.addAfter(Blocks.LAPIS_BLOCK, ModBlocks.CUBIC_ZIRCONIA_BLOCK);
             fabricItemGroupEntries.addAfter(Blocks.DIAMOND_BLOCK, ModBlocks.RUBIDIUM_BLOCK);
             fabricItemGroupEntries.addAfter(Blocks.NETHERITE_BLOCK, ModBlocks.STARSHARD_BLOCK);
-            fabricItemGroupEntries.addAfter(Blocks.OXIDIZED_COPPER, ModBlocks.BRONZE_BLOCK);
             fabricItemGroupEntries.addAfter(ModBlocks.CUBIC_ZIRCONIA_BLOCK, ModBlocks.BLOODSTONE_BLOCK);
         });
 
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.NATURAL_BLOCKS).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.addAfter(Blocks.LAPIS_ORE, ModBlocks.CUBIC_ZIRCONIA_ORE);
             fabricItemGroupEntries.addAfter(ModBlocks.CUBIC_ZIRCONIA_ORE, ModBlocks.DEEPSLATE_CUBIC_ZIRCONIA_ORE);
-            fabricItemGroupEntries.addAfter(Blocks.DEEPSLATE_COPPER_ORE, ModBlocks.TIN_ORE);
-            fabricItemGroupEntries.addAfter(ModBlocks.TIN_ORE, ModBlocks.DEEPSLATE_TIN_ORE);
             fabricItemGroupEntries.addAfter(Blocks.NETHER_QUARTZ_ORE, ModBlocks.NETHER_RUBIDIUM_ORE);
             fabricItemGroupEntries.addAfter(Blocks.ANCIENT_DEBRIS, ModBlocks.END_STARSHARD_ORE);
-            fabricItemGroupEntries.addAfter(Blocks.RAW_COPPER_BLOCK, ModBlocks.TIN_BLOCK);
             fabricItemGroupEntries.addAfter(Blocks.RAW_IRON_BLOCK, ModBlocks.RAW_CUBIC_ZIRCONIA_BLOCK);
             fabricItemGroupEntries.addAfter(ModBlocks.DEEPSLATE_CUBIC_ZIRCONIA_ORE, ModBlocks.BLOODSTONE_ORE);
             fabricItemGroupEntries.addAfter(ModBlocks.BLOODSTONE_ORE, ModBlocks.DEEPSLATE_BLOODSTONE_ORE);
@@ -222,12 +194,6 @@ public class ModItems {
             fabricItemGroupEntries.addAfter(ModItems.STARSHARD_HELMET, ModItems.STARSHARD_CHESTPLATE);
             fabricItemGroupEntries.addAfter(ModItems.STARSHARD_CHESTPLATE, ModItems.STARSHARD_LEGGINGS);
             fabricItemGroupEntries.addAfter(ModItems.STARSHARD_LEGGINGS, ModItems.STARSHARD_BOOTS);
-            fabricItemGroupEntries.addAfter(Items.STONE_SWORD, ModItems.BRONZE_SWORD);
-            fabricItemGroupEntries.addAfter(Items.STONE_AXE, ModItems.BRONZE_AXE);
-            fabricItemGroupEntries.addAfter(Items.CHAINMAIL_BOOTS, ModItems.BRONZE_HELMET);
-            fabricItemGroupEntries.addAfter(ModItems.BRONZE_HELMET, ModItems.BRONZE_CHESTPLATE);
-            fabricItemGroupEntries.addAfter(ModItems.BRONZE_CHESTPLATE, ModItems.BRONZE_LEGGINGS);
-            fabricItemGroupEntries.addAfter(ModItems.BRONZE_LEGGINGS, ModItems.BRONZE_BOOTS);
             fabricItemGroupEntries.addAfter(ModItems.CUBIC_ZIRCONIA_SWORD, ModItems.BLOODSTONE_SWORD);
             fabricItemGroupEntries.addAfter(ModItems.CUBIC_ZIRCONIA_AXE, ModItems.BLOODSTONE_AXE);
             fabricItemGroupEntries.addAfter(ModItems.CUBIC_ZIRCONIA_BOOTS, ModItems.BLOODSTONE_HELMET);
@@ -249,10 +215,6 @@ public class ModItems {
             fabricItemGroupEntries.addAfter(ModItems.STARSHARD_AXE, ModItems.STARSHARD_PICKAXE);
             fabricItemGroupEntries.addAfter(ModItems.STARSHARD_PICKAXE, ModItems.STARSHARD_SHOVEL);
             fabricItemGroupEntries.addAfter(ModItems.STARSHARD_SHOVEL, ModItems.STARSHARD_HOE);
-            fabricItemGroupEntries.addAfter(Items.STONE_PICKAXE, ModItems.BRONZE_AXE);
-            fabricItemGroupEntries.addAfter(ModItems.BRONZE_AXE, ModItems.BRONZE_PICKAXE);
-            fabricItemGroupEntries.addAfter(ModItems.BRONZE_PICKAXE, ModItems.BRONZE_SHOVEL);
-            fabricItemGroupEntries.addAfter(ModItems.BRONZE_SHOVEL, ModItems.BRONZE_HOE);
             fabricItemGroupEntries.addAfter(ModItems.CUBIC_ZIRCONIA_HOE, ModItems.BLOODSTONE_AXE);
             fabricItemGroupEntries.addAfter(ModItems.BLOODSTONE_AXE, ModItems.BLOODSTONE_PICKAXE);
             fabricItemGroupEntries.addAfter(ModItems.BLOODSTONE_PICKAXE, ModItems.BLOODSTONE_SHOVEL);

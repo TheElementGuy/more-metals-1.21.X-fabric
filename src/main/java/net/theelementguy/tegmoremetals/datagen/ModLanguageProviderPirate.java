@@ -30,11 +30,6 @@ public class ModLanguageProviderPirate extends FabricLanguageProvider {
 
         b.add(ModItems.RAW_CUBIC_ZIRCONIA, "Rough fake booty");
 
-        b.add(ModItems.TIN_SCRAPS, "Scraps o' tin");
-
-        b.add(ModItems.BRONZE_INGOT, "Bullion o' brass");
-        addMaterialSet("bronze", "brass", b);
-
         b.add(ModItems.RUBIDIUM, "Firestone");
         addMaterialSet("rubidium", "firestone", b);
 
@@ -45,20 +40,10 @@ public class ModLanguageProviderPirate extends FabricLanguageProvider {
         addMaterialSet("bloodstone", "gorestone", b);
 
         b.add(ModBlocks.RAW_CUBIC_ZIRCONIA_BLOCK, "Chunk o' rough fake booty");
-        b.add(ModBlocks.TIN_BLOCK, "Chunk o' tin");
-
-        b.add(ModBlocks.TIN_ORE, "Orrre o' tin");
-        b.add(ModBlocks.DEEPSLATE_TIN_ORE, "Tough orre o' tin");
 
         b.add(ModBlocks.RAW_CUBIC_ZIRCONIA_BLOCK.asItem(), "Chunk o' rough fake booty");
-        b.add(ModBlocks.TIN_BLOCK.asItem(), "Chunk o' tin");
-
-        b.add(ModBlocks.TIN_ORE.asItem(), "Orrre o' tin");
-        b.add(ModBlocks.DEEPSLATE_TIN_ORE.asItem(), "Tough orre o' tin");
 
         addTrimMaterial(ModTrimMaterials.CUBIC_ZIRCONIA, "fake booty", b);
-        addTrimMaterial(ModTrimMaterials.TIN, "tin", b);
-        addTrimMaterial(ModTrimMaterials.BRONZE, "brass", b);
         addTrimMaterial(ModTrimMaterials.RUBIDIUM, "firestone", b);
         addTrimMaterial(ModTrimMaterials.STARSHARD, "shard o' sun", b);
         addTrimMaterial(ModTrimMaterials.BLOODSTONE, "gorestone", b);

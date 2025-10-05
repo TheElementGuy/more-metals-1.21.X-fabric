@@ -39,19 +39,6 @@ public class ModLanguageProviderLol extends FabricLanguageProvider {
         b.add(ModItems.CUBIC_ZIRCONIA_LEGGINGS, "tuff stuff PATNZ");
         b.add(ModItems.CUBIC_ZIRCONIA_BOOTS, "SUPA TUFF SAFTY BOOTZ");
 
-        b.add(ModItems.TIN_SCRAPS, "tin canz");
-
-        b.add(ModItems.BRONZE_INGOT, "Brozne bricky");
-        b.add(ModItems.BRONZE_SWORD, "Brozne surd");
-        b.add(ModItems.BRONZE_AXE, "Brozne aks");
-        b.add(ModItems.BRONZE_PICKAXE, "Broznzez pikkaxee");
-        b.add(ModItems.BRONZE_SHOVEL, "Brozzne shuvul");
-        b.add(ModItems.BRONZE_HOE, "Bronz hoe");
-        b.add(ModItems.BRONZE_HELMET, "Brozne hullmet");
-        b.add(ModItems.BRONZE_CHESTPLATE, "Brozne chessplate");
-        b.add(ModItems.BRONZE_LEGGINGS, "brozne Leggginggs");
-        b.add(ModItems.BRONZE_BOOTS, "Brozne buuts");
-
         b.add(ModItems.RUBIDIUM, "OUCHIE SO HOT");
         b.add(ModItems.RUBIDIUM_SWORD, "rudibidium surd");
         b.add(ModItems.RUBIDIUM_AXE, "rudibidium aks");
@@ -87,16 +74,12 @@ public class ModLanguageProviderLol extends FabricLanguageProvider {
 
         b.add(ModBlocks.CUBIC_ZIRCONIA_BLOCK.asItem(), "Blok of tuff stuff");
         b.add(ModBlocks.RAW_CUBIC_ZIRCONIA_BLOCK.asItem(), "bLuk uv gross tuff stuff");
-        b.add(ModBlocks.TIN_BLOCK.asItem(), "blok of cans");
-        b.add(ModBlocks.BRONZE_BLOCK.asItem(), "Block of Brozne");
         b.add(ModBlocks.RUBIDIUM_BLOCK.asItem(), "hot Blouk");
         b.add(ModBlocks.STARSHARD_BLOCK.asItem(), "shiny shiny bluckc");
         b.add(ModBlocks.BLOODSTONE_BLOCK.asItem(), "blok ov uh oh");
 
         b.add(ModBlocks.CUBIC_ZIRCONIA_ORE.asItem(), "rokz wiht sum tuff stuff");
         b.add(ModBlocks.DEEPSLATE_CUBIC_ZIRCONIA_ORE.asItem(), "dark STONY roks withh sommmmmmmmmme tuf stuff");
-        b.add(ModBlocks.TIN_ORE.asItem(), "rokz with som cans");
-        b.add(ModBlocks.DEEPSLATE_TIN_ORE.asItem(), "dark stony roks with som cans");
         b.add(ModBlocks.BLOODSTONE_ORE.asItem(), "stony stony wiht...is that wut i thinks it izz???");
         b.add(ModBlocks.DEEPSLATE_BLOODSTONE_ORE.asItem(), "dark stony roks wihth gorre");
         b.add(ModBlocks.NETHER_RUBIDIUM_ORE.asItem(), "HHHHOT Nether ORe");
@@ -104,24 +87,18 @@ public class ModLanguageProviderLol extends FabricLanguageProvider {
 
         b.add(ModBlocks.CUBIC_ZIRCONIA_BLOCK, "Blok of tuff stuff");
         b.add(ModBlocks.RAW_CUBIC_ZIRCONIA_BLOCK, "bLuk uv gross tuff stuff");
-        b.add(ModBlocks.TIN_BLOCK, "blok of cans");
-        b.add(ModBlocks.BRONZE_BLOCK, "Block of Brozne");
         b.add(ModBlocks.RUBIDIUM_BLOCK, "hot Blouk");
         b.add(ModBlocks.STARSHARD_BLOCK, "shiny shiny bluckc");
         b.add(ModBlocks.BLOODSTONE_BLOCK, "blok ov uh oh");
 
         b.add(ModBlocks.CUBIC_ZIRCONIA_ORE, "rokz wiht sum tuff stuff");
         b.add(ModBlocks.DEEPSLATE_CUBIC_ZIRCONIA_ORE, "dark STONY roks withh sommmmmmmmmme tuf stuff");
-        b.add(ModBlocks.TIN_ORE, "rokz with som cans");
-        b.add(ModBlocks.DEEPSLATE_TIN_ORE, "dark stony roks with som cans");
         b.add(ModBlocks.BLOODSTONE_ORE, "stony stony wiht...is that wut i thinks it izz???");
         b.add(ModBlocks.DEEPSLATE_BLOODSTONE_ORE, "dark stony roks wihth gorre");
         b.add(ModBlocks.NETHER_RUBIDIUM_ORE, "HHHHOT Nether ORe");
         b.add(ModBlocks.END_STARSHARD_ORE, "shyni wite rockkz");
 
         addTrimMaterial(ModTrimMaterials.CUBIC_ZIRCONIA, "tuff stuff", b);
-        addTrimMaterial(ModTrimMaterials.TIN, "cnaz on ur shirt", b);
-        addTrimMaterial(ModTrimMaterials.BRONZE, "zrobne", b);
         addTrimMaterial(ModTrimMaterials.RUBIDIUM, "burny clohtez", b);
         addTrimMaterial(ModTrimMaterials.STARSHARD, "oooh shiny", b);
     }
